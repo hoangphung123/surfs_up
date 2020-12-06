@@ -97,7 +97,14 @@ def stats(start=None, end=None):
         filter(Measurement.date <= end).all()
     temps = list(np.ravel(results))
     return jsonify(temps=temps)
-# flask run...need to finish reading this section
+# flask run
+# After running this code, you'll be able to copy and paste the web address provided by Flask into a web browser. 
+# Open /api/v1.0/temp/start/end route and check to make sure you get the correct result, which is
+# [null,null,null]
+# You would add the following path to the address in your web browser:
+# /api/v1.0/temp/2017-06-01/2017-06-30
+# should return 
+# ["temps":[71.0,77.21989528795811,83.0]]
 
 # from tech help
 # if __name__ == '__main__':

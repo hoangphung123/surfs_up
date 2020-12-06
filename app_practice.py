@@ -1,4 +1,5 @@
 # Note: Using Git Bash to run website and Anaconda to run jupyter notebook
+# Could not get this to work with VSCode terminal.
 
 # open command prompt to update flask (both git bash and anaconda, not sure if it mattered)
 # pip install flask
