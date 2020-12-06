@@ -2,18 +2,18 @@
 UT McCombs Module 9: Surf's Up with Advanced Data Storage and Retrieval
 
 ## Overview:
-
+An investor wants to learn more about the weather before committing to build a Surf and Ice Cream shop in Oahu, Hawaii.  The investor's main concern is the precipitation forcing the shop to close too frequently.  To analyze Hawaii's weather data, SQLAlchemy was used to query the SQLite database. 
 
 ## Results:
-### June Statistics for the Temperature and Precipitaiton
+### June Statistics for the Temperature and Precipitation
 
 ![Pic_1](https://github.com/Baylex/surfs_up/blob/main/Resources/june_stat_temp_prcp.PNG)
 
-### December Statistics for the Temperature and Precipitaiton
+### December Statistics for the Temperature and Precipitation
 
 ![Pic_2](https://github.com/Baylex/surfs_up/blob/main/Resources/dec_stat_temp_prcp.PNG)
 
-1. The mean temperature of 75°F for June is higher than the mean temperature of 71°F for December.  However, the opposite is true for precipiation.  December had the higher precipitation of .22 inches while June had .14 inches. 
+1. The mean temperature of 75°F for June is higher than the mean temperature of 71°F for December.  However, the opposite is true for precipitation.  December had the higher precipitation of .22 inches while June had .14 inches. 
 
 ![Pic 3](https://github.com/Baylex/surfs_up/blob/main/Resources/june_temp_graph.PNG)
 ![Pic 4](https://github.com/Baylex/surfs_up/blob/main/Resources/dec_temp_graph.PNG)
@@ -23,8 +23,9 @@ UT McCombs Module 9: Surf's Up with Advanced Data Storage and Retrieval
 ![Pic 5](https://github.com/Baylex/surfs_up/blob/main/Resources/june_temp_prcp_graph.PNG)
 ![Pic 6](https://github.com/Baylex/surfs_up/blob/main/Resources/dec_temp_prcp_graph.PNG)
 
-3. As an addinonal query, the June and December months were filtered from the date.  The temperatrue and precipation data was then graphed as a scatterplot with a trendline.  Reading the slopes of the trendline equations, June (slope = -.037) has a steeper slope than December (slope = -.019), which means as the temperature increases, the precipation decreases more sharply in June than in December.  
+3. As an additional query, the June and December months were filtered from the date.  The temperature and precipitation data was then graphed as a scatterplot with a trendline.  Reading the slopes of the trendline equations, June (slope = -.037) has a slightly steeper slope than December (slope = -.019), which means as the temperature increases, the precipitation decreases slightly more in June than in December.  However, the difference is nominal.   
 
 ## Summary:
 
-There is a high-level summary of the results and there are two additional queries to perform to gather more weather data for June and December. (5 pt)
+The investor's main concern was getting rained out too frequently.  Comparing the June and December weather patterns, the temperatures and precipitation means are reasonably close.  The temperature data is not strongly skewed for either month.  The ratio of the temperatures to the precipitation for the two months is also reasonably similar.  The data supports opening a Surf and Ice Cream shop year-round. 
+
