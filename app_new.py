@@ -78,23 +78,24 @@ def temp_monthly():
       filter(Measurement.date >= prev_year).all()
     temps = list(np.ravel(results))
     return jsonify(temps=temps)
-#do flask run, (http://localhost:5000/), block of temps (F)
 
-#9.5.6 Statistic Route
+#do flask run (http://localhost:5000/)
+
 @app.route("/api/v1.0/temp/<start>")
 @app.route("/api/v1.0/temp/<start>/<end>")
 
 def stats(start=None, end=None):
     sel = [func.min(Measurement.tobs), func.avg(Measurement.tobs), func.max(Measurement.tobs)]
+
     if not end:
         results = session.query(*sel).\
             filter(Measurement.date >= start).\
             filter(Measurement.date <= end).all()
         temps = list(np.ravel(results))
         return jsonify(temps)
+
     results = session.query(*sel).\
         filter(Measurement.date >= start).\
         filter(Measurement.date <= end).all()
     temps = list(np.ravel(results))
     return jsonify(temps=temps)
-# flask run...need to finish reading this section
