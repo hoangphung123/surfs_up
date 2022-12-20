@@ -1,7 +1,7 @@
 # Set up the Flask Weather App
 # Import dependencies
 import datetime as dt
-import numpy as np
+
 import pandas as pd
 import sqlalchemy
 from sqlalchemy.ext.automap import automap_base
